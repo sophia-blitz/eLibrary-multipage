@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The eLibrary | Add a New Book</title>
+  <meta name="author" content="Sophia Blitz">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/eLibrary.css">
+  <script src="js/addnewbook.js"></script>
+  <script src="js/books-shared.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">The eLibrary&reg</a> : : : CS318 Demo WebApp Project
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="virtualtour.html">Virtual Tour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          Welcome Guest
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="container">
+    <h1>Add a New Book</h1>
+    <hr class="my-4">
+      
+    <form>
+      <fieldset>
+        <legend>*required fields</legend>
+        <div id="errorMsg" class="alert-danger alert hidden"> </div>
+        <div class="form-group">
+          <label class="col-form-label" for="title">*Title</label>
+          <input required type="text" class="form-control" placeholder="Book title" id="title">
+        </div>
+        <div class="row">
+          <div class="form-group col">
+            <label class="col-form-label" for="isbn">*ISBN</label>
+            <input required type="text" class="form-control" placeholder="###-##########" id="isbn">
+          </div>
+
+          <div class="form-group col">
+            <label class="col-form-label" for="overdueFee">*Overdue Fee per day</label>
+            <input required type="number" class="form-control" placeholder="0.00" id="overdueFee">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col">
+            <label class="col-form-label" for="publisher">*Publisher</label>
+            <input required type="text" class="form-control" placeholder="" id="publisher">
+          </div>
+
+          <div class="form-group col">
+            <label class="col-form-label" for="datePublished">*Date Published</label>
+            <input required type="date" class="form-control" placeholder="" id="datePublished">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <div class="float-right">
+      <button id="resetBtn" class="btn btn-outline-danger">Reset</button>
+      <button id="submitBtn" class="btn btn-outline-success">Add
+        Book</button>
+    </div>
+  </main>
+  <footer>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="form-inline my-8 my-lg-0">
+          Sophia Blitz :::CS318
+        </div>
+        <div class="form-inline my-2 my-lg-0">
+          &copy December 2019
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
